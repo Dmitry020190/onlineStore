@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 const LeatherJackets = (props) => {
   let JacketItem = props.catalog.jacket.map( (catItem) =>
-    <Jacket photo = {catItem.ItemPhoto[0]} 
+    <Jacket photo = {catItem.photo} 
             name = {catItem.name} 
             typeOfClothing = {catItem.typeOfClothing} 
             review = {catItem.review} 

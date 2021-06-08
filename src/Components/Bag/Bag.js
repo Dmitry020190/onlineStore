@@ -5,7 +5,7 @@ const Bag = (props) => {
   return (
     <div className = {style.wrappProd}>
       <div className = {style.wrappImgProd}>
-        <img src = {props.photo} className = {style.imgProd}/>
+        <img src={require(`../../Img/main/Bags/${props.photo[0]}`).default} className = {style.imgProd}/>
       </div>
       <div className = {style.wrappInfo}>
         <div className = {style.name}>

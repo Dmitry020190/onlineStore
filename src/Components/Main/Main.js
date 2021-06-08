@@ -9,7 +9,7 @@ import Aside from "../Aside/Aside.js";
 
 const Main = (props) => {
   let JacketElement = props.main.jacket.map( (jack) => 
-    <Jacket photo = {jack.ItemPhoto[0]} 
+    <Jacket photo = {jack.photo} 
             name = {jack.name} 
             typeOfClothing = {jack.typeOfClothing} 
             review = {jack.review} 
@@ -19,7 +19,7 @@ const Main = (props) => {
   )
 
   let ParkElement = props.main.parks.map( (park) => 
-    <CoatsParkas  photo = {park.Item} 
+    <CoatsParkas  photo = {park.photo} 
                   name = {park.name} 
                   typeOfClothing = {park.typeOfClothing} 
                   review = {park.review} 
@@ -29,7 +29,7 @@ const Main = (props) => {
   )
 
   let BagElement = props.main.bag.map( (bags) => 
-    <Bag  photo = {bags.Item} 
+    <Bag  photo = {bags.photo} 
           name = {bags.name} 
           typeOfClothing = {bags.typeOfClothing} 
           review = {bags.review} 
@@ -39,7 +39,7 @@ const Main = (props) => {
   )
 
   let ShoesElement = props.main.shoes.map( (sh) => 
-    <Shoes  photo = {sh.Item} 
+    <Shoes  photo = {sh.photo} 
             name = {sh.name} 
             typeOfClothing = {sh.typeOfClothing} 
             review = {sh.review} 

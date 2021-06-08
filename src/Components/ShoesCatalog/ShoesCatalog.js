@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 const ShoesCatalog = (props) => {
 
   let ShoesItem = props.catalog.shoes.map( (catItem) =>
-    <Shoes  photo = {catItem.Item} 
+    <Shoes  photo = {catItem.photo} 
             name = {catItem.name} 
             typeOfClothing = {catItem.typeOfClothing} 
             review = {catItem.review} 
