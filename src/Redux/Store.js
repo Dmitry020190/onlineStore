@@ -5,7 +5,7 @@ const Store = {
       jacket: [
         {
           id: 1,
-          photo: ['Jacket_1.jpeg', 'Jacket1_1.jpeg', 'Jacket1_2.jpeg', 'Jacket1_3.jpeg','Logo.jpeg'],
+          photo: ['Jacket_1.jpeg', 'Jacket_1.1.jpeg', 'Jacket_1.2.jpeg', 'Jacket_1.3.jpeg','Logo.jpeg'],
           name: "DAVID OUTWEAR KINGDOM",
           typeOfClothing: "LEATHER JACKET",
           review: "review",

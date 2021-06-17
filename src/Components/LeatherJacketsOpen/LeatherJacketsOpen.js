@@ -3,12 +3,6 @@ import style from "./LeatherJacketsOpen.module.css";
 import {NavLink} from "react-router-dom";
 
 const LeatherJacketsOpen = (props) => {
-  
-  let jacketPhoto1 = props.catalog.jacket[0].ItemPhoto[0];
-  let jacketPhoto2 = props.catalog.jacket[0].ItemPhoto[1];
-  let jacketPhoto3 = props.catalog.jacket[0].ItemPhoto[2];
-  let jacketPhoto4 = props.catalog.jacket[0].ItemPhoto[3];
-  let jacketPhoto5 = props.catalog.jacket[0].ItemPhoto[4];
 
   document.onclick = function (event) {
     let elements = document.getElementsByClassName(style.images);
@@ -157,36 +151,36 @@ const LeatherJacketsOpen = (props) => {
       <div className = {style.leatherJacketsOpen}>
         <div className = {style.wrappImages}>
           <div className = {style.images}>
-            <img src = {jacketPhoto1} className = {style.jacketItem} id = "jacketItem_1" />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[0]}`).default} className = {style.jacketItem} id = "jacketItem_1" />
           </div>
           <div className = {style.images}>
-            <img src = {jacketPhoto2} className = {style.jacketItem} id = "jacketItem_2" />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[1]}`).default} className = {style.jacketItem} id = "jacketItem_2" />
           </div>
           <div className = {style.images}>
-            <img src = {jacketPhoto3} className = {style.jacketItem} id = "jacketItem_3" />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[2]}`).default} className = {style.jacketItem} id = "jacketItem_3" />
           </div>
           <div className = {style.images}>
-            <img src = {jacketPhoto4} className = {style.jacketItem} id = "jacketItem_4" />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[3]}`).default} className = {style.jacketItem} id = "jacketItem_4" />
           </div>
           <div className = {style.images}>
-            <img src = {jacketPhoto5} className = {style.jacketItem} id = "jacketItem_5" />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[4]}`).default} className = {style.jacketItem} id = "jacketItem_5" />
           </div>   
         </div>
         <div className = {style.wrappImageFront}>
           <div className = {style.frontImages}>
-            <img src = {jacketPhoto1} className = {style.jacketItemFront} />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[0]}`).default} className = {style.jacketItemFront} />
           </div>
           <div className = {style.frontImages}>
-            <img src = {jacketPhoto2} className = {style.jacketItemFront} />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[1]}`).default} className = {style.jacketItemFront} />
           </div>
           <div className = {style.frontImages}>
-            <img src = {jacketPhoto3} className = {style.jacketItemFront} />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[2]}`).default} className = {style.jacketItemFront} />
           </div>
           <div className = {style.frontImages}>
-            <img src = {jacketPhoto4} className = {style.jacketItemFront} />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[3]}`).default} className = {style.jacketItemFront} />
           </div>
           <div className = {style.frontImages}>
-            <img src = {jacketPhoto5} className = {style.jacketItemFront} />
+            <img src={require(`../../Img/main/Jackets/${props.catalog.jacket[0].photo[4]}`).default} className = {style.jacketItemFront} />
           </div> 
         </div>
         <div className = {style.wrappChoose}>
